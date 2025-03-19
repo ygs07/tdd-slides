@@ -12,6 +12,8 @@ Tests are essentially scenarios for your app to pass through without breaking.
 
 TDD is an approach to coding that prioritises creating these scenraios during development.
 
+- [Slide deck 📚 here](https://ygs07.github.io/tdd-slides)
+
 ---
 
 # How would you describe a Perfect Application?
@@ -98,7 +100,9 @@ Future proofs your application, ensuring that new feature will not break existin
 
 - Requires PHP 8.2
 
-[Learn more](https://pestphp.com/docs/installation)
+- Very simple syntax
+
+[PEST Documentation](https://pestphp.com/docs/installation)
 
 ```php
 // php Example
@@ -109,7 +113,7 @@ expect(true)->toBeTrue();
 
 ---
 
-🧪 Vitest (JS/TS)
+# 🧪 Vitest (JS/TS)
 
 - Fast unit/integration testing for JavaScript/TypeScript
 
@@ -121,7 +125,9 @@ expect(true)->toBeTrue();
 
 - Requires npm v18
 
-[Learn more](https://vitest.dev/guide/ui.html)
+- Comes with a testing UI
+
+[Vitest Documentation](https://vitest.dev/guide/ui.html)
 
 ```ts
 test("works", () => {
@@ -133,10 +139,24 @@ test("works", () => {
 
 # The Red-Green-Yellow Cycle
 
+<v-click>
 🚦 Red → Write a failing test  
+</v-click>
+
+<v-click>
+
 ✅ Green → Make it pass  
+</v-click>
+
+<v-click>
+
 🟡 Yellow → Refactor for better design  
+</v-click>
+
+<v-click>
+
 🔁 Repeat!
+</v-click>
 
 ---
 
@@ -241,7 +261,7 @@ expect(user.fullName()).toBe("John Doe");
 
 # 🧪 Types of Tests
 
-- **Unit Tests**
+- **Unit Tests AKA Integration Tests**
 - **Feature Tests**
 - **End-to-End (E2E) Tests**
 
@@ -335,9 +355,9 @@ describe("Login Flow", () => {
 
 ---
 
-# Practical Example: TDD for APP_DEBUG
+# Practical Example:
 
-Lets Jump into some code
+Lets Jump into some code, I've got some repos setup locally but feel free to:
 
 [Click here to visit the github Repo for the Laravel App here](https://sli.dev/features/line-highlighting)
 
@@ -356,7 +376,17 @@ Lets Jump into some code
 - When your fundamental tests are put in place writing code that breaks an application becomes difficult
 - Using Githooks, tests can be made to run on every push request or a merge request, making it possible to prevent code that fail tests to reach your repo.
 
-## A large scale Application can not Stand without test.
+<v-click>
+
+<span v-mark.circle.orange="2"> A large scale Application can not Stand without test. </span>
+
+</v-click>
+
+---
+
+## Let's Talk TDD In the Context of SchoolTry
+
+<img height="150" width="190" class="inline-block" src="https://schooltry.com/images/logo.png" alt=""/>
 
 ---
 
@@ -364,5 +394,4 @@ Lets Jump into some code
 
 🙏 Ask away!
 
-- GitHub repo 🔗
-- Slide deck 📚
+- [Slide deck 📚 here](https://ygs07.github.io/tdd-slides)
